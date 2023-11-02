@@ -1,9 +1,4 @@
 #!/bin/bash
-### Color
-apt upgrade -y
-apt update -y
-apt install ruby -y
-apt install wondershaper -y
 Green="\e[92;1m"
 RED="\033[31m"
 YELLOW="\033[33m"
@@ -126,7 +121,9 @@ sts="${Info}"
 else
 sts="${Error}"
 fi
-echo -e "\e[32mloading...\e[0m"
+apt install ruby -y
+gem install lolcat
+apt install wondershaper -y
 clear
 # REPO    
     REPO="https://raw.githubusercontent.com/BayuMOD/v3/main/"
